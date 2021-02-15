@@ -1,0 +1,51 @@
+body {
+    width: 960px;
+    margin:auto;
+    
+}
+
+.header-logo {
+    float: inline-start;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    background-color: aquamarine;
+    color: burlywood;
+
+}
+
+header nav ul li{
+    background-color: rgb(226, 214, 38);
+    display: inline;
+    line-height: 25px;
+    font-size: large;
+    margin: 50px;
+
+}
+
+header nav ul{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: chocolate;
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer{
+    background-color: brown;
+    color: burlywood;
+    font-weight: 900;
+    text-align: center;
+}
+
