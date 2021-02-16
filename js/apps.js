@@ -1,20 +1,14 @@
 'use strict'
 
-// let myFavTeam = prompt('Do you think Barcelona is my favourite team?', 'yes or no');
-
-// while (myFavTeam.toLowerCase() != 'yes' && myFavTeam.toLowerCase() != 'no') {
-//     myFavTeam = prompt('Do you think Barcelona is my favourite team?', 'yes or no')
-
-
-
+let score = 0;
 alert('Welcome to My Personal Website.')
 
 let firstName = prompt('whats your name?');
-alert('Our Greeting ' + firstName.toLowerCase())
+alert('Our Greeting ' + firstName)
 
 let firstWork = prompt('do you think my first work in Jordan?' , 'yes or no')
 
-while (firstWork.toLowerCase() != 'yes' && firstWork.toLowerCase() != 'no') {
+while (firstWork.toLowerCase() !== 'yes' && firstWork.toLowerCase() !== 'y' && firstWork.toLowerCase() !== 'no'  && firstWork.toLowerCase() !== 'n') {
     firstWork= prompt('My First Work in Jordan?', 'yes or no')
 }
 
@@ -23,6 +17,8 @@ if (firstWork.toLowerCase() == "yes")
 {
     console.log ("My First Work in Jordan")
     alert('You are right, My First Work in Jordan')
+    score++ ;
+
 } else{
     console.log ("You are wrong, because my First Work in Jordan")
     alert('You are wrong, because my First Work in Jordan')
@@ -34,6 +30,7 @@ if (firstSalary.toLowerCase() == "yes" )
 {
     console.log ("My First Salary in Jordan is 500JD")
     alert('You are right, My First Salary in Jordan is 500JD')
+    score++ ;
 } else{
     console.log ("You are wrong, because my First Salary in Jordan is 500JD")
     alert('You are wrong, because my First Salary in Jordan is 500JD')
@@ -45,6 +42,7 @@ if (educationCertificate.toLowerCase() == "yes")
 {
     console.log ("My Education Certificate is Bachelor Degree")
     alert('You are right, My Education Certificate is Bachelor Degree')
+    score++ ;
 } else{
     console.log ("You are wrong, because My Education Certificate is Bachelor Degree")
     alert('You are wrong, because My Education Certificate is Bachelor Degree')
@@ -56,6 +54,7 @@ if (myHomeTown.toLowerCase() == "yes")
 {
     console.log ("My HomeTown is Irbid")
     alert('You are right, My Home Town is Irbid')
+    score++ ;
 } else {
     console.log ("You are wrong, because My Home Town is Irbid")
     alert('You are wrong, because My Home Town is Irbid')
@@ -67,9 +66,59 @@ if (travelOutsideJordan.toLowerCase() == "yes")
 {
     console.log ("You are right, I worked in Saudi Arabia")
     alert('You are right,  I worked in Saudi Arabia')
+    score++ ;
 } else{
     console.log ("You are wrong, because I worked in Saudi Arabia")
     alert('You are wrong, because  I worked in Saudi Arabia')
 }
 
 alert('Welcome ' + firstName + ' to my website');
+
+
+
+let num= prompt('Guess the Year of Birthday? and please put numbers only?' ) 
+
+for ( let i=0 ; i < 3 ; i++)
+if (num === '89') { 
+   
+    alert ('The Year of Birthday is 89') ;
+    score++ ;
+    break ;
+} else {
+    if (num < 89 ){
+    alert ('Too High');
+    num = prompt('Guess the Year of Birthday?');
+    } else {
+    if (num > 89 ){
+    alert ('Too Low');
+    num= prompt('Guess the Year of Birthday?');
+
+    }
+    }
+}
+
+
+
+let array = [ '20' , '25' , '30' , '35' , '40', '45' , '50'];
+alert ('the number stored in the array is' + array);
+
+let arr = prompt('Whats the number stored in the array?');
+
+for ( let i = 0 ; i < 5 ; i++ )
+if ( arr === array[2] ){
+    alert (' you are right, and the number is 30');
+    score++ ; 
+    break;
+} else {
+    arr = prompt('Whats the number stored in the array?');
+
+}
+
+alert ('your score is ' + score + ' out of 7');
+
+
+
+
+
+
+
