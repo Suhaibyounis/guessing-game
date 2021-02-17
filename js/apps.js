@@ -175,15 +175,16 @@ function travelOutsideJordanFun(){
 }
 // travelOutsideJordanFun();
 
-function fiveInOne(){
-  firstWorkFun();
-  firstSalaryFun();
-  educationCertificateFun();
-  myHomeTownFun();
-  travelOutsideJordanFun();
+function fiveInOne(num){
+  let Qarr = [firstWorkFun(),firstSalaryFun(),educationCertificateFun(),myHomeTownFun(),travelOutsideJordanFun()];
+  Qarr[num];
 }
 
-fiveInOne();
+// fiveInOne();
+
+for ( let j = 0 ; j < 5 ; j++ ){
+  fiveInOne(j);
+}
 
 alert('Welcome ' + firstName + ' to my website');
 
