@@ -13,7 +13,7 @@ while (firstWork.toLowerCase() !== 'yes' && firstWork.toLowerCase() !== 'y' && f
 }
 
 
-if (firstWork.toLowerCase() == "yes")
+if (firstWork.toLowerCase() == "yes" || firstWork.toLowerCase() == "y" )
 {
     console.log ("My First Work in Jordan");
     alert('You are right, My First Work in Jordan');
@@ -30,7 +30,7 @@ while (firstSalary.toLowerCase() !== 'yes' && firstSalary.toLowerCase() !== 'y' 
     firstSalary= prompt('My First Salary in Jordan is 500JD?', 'yes or no')
 }
 
-if (firstSalary.toLowerCase() == "yes" )
+if (firstSalary.toLowerCase() == "yes" || firstSalary.toLowerCase() == "y" )
 {
     console.log ("My First Salary in Jordan is 500JD");
     alert('You are right, My First Salary in Jordan is 500JD');
@@ -46,7 +46,7 @@ while (educationCertificate.toLowerCase() !== 'yes' && educationCertificate.toLo
     educationCertificate= prompt('My Education Certificate is Bachelor Degree?', 'yes or no')
 }
 
-if (educationCertificate.toLowerCase() == "yes")
+if (educationCertificate.toLowerCase() == "yes" || educationCertificate.toLowerCase() == "y" )
 {
     console.log ("My Education Certificate is Bachelor Degree");
     alert('You are right, My Education Certificate is Bachelor Degree');
@@ -62,7 +62,7 @@ while (myHomeTown.toLowerCase() !== 'yes' && myHomeTown.toLowerCase() !== 'y' &&
     myHomeTown= prompt('My Home Town is Irbid?', 'yes or no');
 }
 
-if (myHomeTown.toLowerCase() == "yes")
+if (myHomeTown.toLowerCase() == "yes" || myHomeTown.toLowerCase() == "y")
 {
     console.log ("My HomeTown is Irbid");
     alert('You are right, My Home Town is Irbid');
@@ -79,7 +79,7 @@ while (travelOutsideJordan.toLowerCase() !== 'yes' && travelOutsideJordan.toLowe
 }
 
 
-if (travelOutsideJordan.toLowerCase() == "yes")
+if (travelOutsideJordan.toLowerCase() == "yes" || travelOutsideJordan.toLowerCase() == "y")
 {
     console.log ("You are right, I worked in Saudi Arabia");
     alert('You are right,  I worked in Saudi Arabia');
