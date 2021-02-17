@@ -5,6 +5,7 @@ alert('Welcome to My Personal Website.');
 
 let firstName = prompt('whats your name?');
 alert('Our Greeting ' + firstName);
+
 /*
 let firstWork = prompt('do you think my first work in Jordan?' , 'yes or no');
 
@@ -24,6 +25,7 @@ if (firstWork.toLowerCase() == "yes" || firstWork.toLowerCase() == "y" )
     alert('You are wrong, because my First Work in Jordan');
 }
 */
+
 function firstWorkFun(){
   let firstWork = prompt('do you think my first work in Jordan?' , 'yes or no');
   if (firstWork.toLowerCase() === 'yes' || firstWork.toLowerCase() === 'y' )
@@ -38,7 +40,7 @@ function firstWorkFun(){
   }
 }
 
-firstWorkFun();
+// firstWorkFun();
 
 /*
 let firstSalary = prompt('My First Salary in Jordan is 500JD?' , 'yes or no');
@@ -70,7 +72,7 @@ function firstSalaryFun(){
     alert('You are wrong, because my First Salary in Jordan is 500JD');
   }
 }
-firstSalaryFun();
+// firstSalaryFun();
 
 /*
 let educationCertificate = prompt('My Education Certificate is Bachelor Degree?' , 'yes or no');
@@ -102,7 +104,7 @@ function educationCertificateFun(){
     alert('You are wrong, because My Education Certificate is Bachelor Degree');
   }
 }
-educationCertificateFun();
+// educationCertificateFun();
 
 
 /*
@@ -122,6 +124,8 @@ if (myHomeTown.toLowerCase() == 'yes' || myHomeTown.toLowerCase() == 'y')
   alert('You are wrong, because My Home Town is Irbid');
 }
 */
+
+
 function myHomeTownFun(){
   let myHomeTown = prompt('My Home Town is Irbid?' , 'yes or no');
   if (myHomeTown.toLowerCase() == 'yes' || myHomeTown.toLowerCase() == 'y')
@@ -134,7 +138,7 @@ function myHomeTownFun(){
     alert('You are wrong, because My Home Town is Irbid');
   }
 }
-myHomeTownFun();
+// myHomeTownFun();
 
 
 /*
@@ -156,6 +160,7 @@ if (travelOutsideJordan.toLowerCase() == 'yes' || travelOutsideJordan.toLowerCas
 }
 */
 
+
 function travelOutsideJordanFun(){
   let travelOutsideJordan = prompt('do you think that I traveled outside Jordan?' , 'yes or no');
   if (travelOutsideJordan.toLowerCase() == 'yes' || travelOutsideJordan.toLowerCase() == 'y')
@@ -168,8 +173,17 @@ function travelOutsideJordanFun(){
     alert('You are wrong, because  I worked in Saudi Arabia');
   }
 }
-travelOutsideJordanFun();
+// travelOutsideJordanFun();
 
+function fiveInOne(){
+  firstWorkFun();
+  firstSalaryFun();
+  educationCertificateFun();
+  myHomeTownFun();
+  travelOutsideJordanFun();
+}
+
+fiveInOne();
 
 alert('Welcome ' + firstName + ' to my website');
 
@@ -195,6 +209,7 @@ for ( let i=0 ; i < 3 ; i++)
       }
     }
   }
+
 
 
 
