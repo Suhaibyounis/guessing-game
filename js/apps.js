@@ -6,187 +6,119 @@ alert('Welcome to My Personal Website.');
 let firstName = prompt('whats your name?');
 alert('Our Greeting ' + firstName);
 
-/*
-let firstWork = prompt('do you think my first work in Jordan?' , 'yes or no');
-
-while (firstWork.toLowerCase() !== 'yes' && firstWork.toLowerCase() !== 'y' && firstWork.toLowerCase() !== 'no'  && firstWork.toLowerCase() !== 'n') {
-    firstWork= prompt('My First Work in Jordan?', 'yes or no');
-}
-
-
-if (firstWork.toLowerCase() == "yes" || firstWork.toLowerCase() == "y" )
-{
-    console.log ("My First Work in Jordan");
-    alert('You are right, My First Work in Jordan');
-    score++ ;
-
-} else{
-    console.log ("You are wrong, because my First Work in Jordan");
-    alert('You are wrong, because my First Work in Jordan');
-}
-*/
 
 function firstWorkFun(){
-  let firstWork = prompt('do you think my first work in Jordan?' , 'yes or no');
-  if (firstWork.toLowerCase() === 'yes' || firstWork.toLowerCase() === 'y' )
+  let firstWork = prompt( 'do you think my first work in Jordan? , yes or no' );
+  while(!( firstWork.toLowerCase() == 'yes' || firstWork.toLowerCase() == 'y' || firstWork.toLowerCase() == 'no' || firstWork.toLowerCase() == 'n' ) ){
+    firstWork = prompt( 'do you think my first work in Jordan? , yes or no' );
+  }
+  if ( firstWork.toLowerCase() == 'yes' || firstWork.toLowerCase() == 'y' )
   {
-    console.log ('My First Work in Jordan');
-    alert('You are right, My First Work in Jordan');
+    console.log ( 'My First Work in Jordan' );
+    alert( 'You are right, My First Work in Jordan' );
     score++ ;
-
-  } else{
-    console.log ('You are wrong, because my First Work in Jordan');
-    alert('You are wrong, because my First Work in Jordan');
+  } else if ( firstWork.toLowerCase() == 'no' || firstWork.toLowerCase() == 'n' ) {
+    console.log ( 'You are wrong, because my First Work in Jordan' );
+    alert( 'You are wrong, because my First Work in Jordan' );
+  } else {
+    firstWork = prompt( 'do you think my first work in Jordan?' , 'yes or no' );
   }
 }
 
-// firstWorkFun();
-
-/*
-let firstSalary = prompt('My First Salary in Jordan is 500JD?' , 'yes or no');
-
-while (firstSalary.toLowerCase() !== 'yes' && firstSalary.toLowerCase() !== 'y' && firstSalary.toLowerCase() !== 'no' && firstSalary.toLowerCase() !== 'n') {
-  firstSalary= prompt('My First Salary in Jordan is 500JD?', 'yes or no');
-}
-
-if (firstSalary.toLowerCase() == 'yes' || firstSalary.toLowerCase() == 'y' )
-{
-  console.log ('My First Salary in Jordan is 500JD');
-  alert('You are right, My First Salary in Jordan is 500JD');
-  score++ ;
-} else{
-  console.log ('You are wrong, because my First Salary in Jordan is 500JD');
-  alert('You are wrong, because my First Salary in Jordan is 500JD');
-}
-*/
-
 function firstSalaryFun(){
   let firstSalary = prompt('My First Salary in Jordan is 500JD?' , 'yes or no');
+  while(!(firstSalary.toLowerCase() == 'yes' || firstSalary.toLowerCase() == 'y' || firstSalary.toLowerCase() == 'no' || firstSalary.toLowerCase() == 'n')){
+  firstSalary = prompt('My First Salary in Jordan is 500JD?' , 'yes or no');
+  }
   if (firstSalary.toLowerCase() == 'yes' || firstSalary.toLowerCase() == 'y' )
   {
     console.log ('My First Salary in Jordan is 500JD');
     alert('You are right, My First Salary in Jordan is 500JD');
-    score++ ;
-  } else{
+    score++;
+    
+  } else if (firstSalary.toLowerCase() == 'no' || firstSalary.toLowerCase() == 'n' ){
     console.log ('You are wrong, because my First Salary in Jordan is 500JD');
     alert('You are wrong, because my First Salary in Jordan is 500JD');
+    
+  } else {
+    firstSalary = prompt('My First Salary in Jordan is 500JD?' , 'yes or no');
   }
-}
-// firstSalaryFun();
 
-/*
-let educationCertificate = prompt('My Education Certificate is Bachelor Degree?' , 'yes or no');
-
-while (educationCertificate.toLowerCase() !== 'yes' && educationCertificate.toLowerCase() !== 'y' && educationCertificate.toLowerCase() !== 'no' && educationCertificate.toLowerCase() !== 'n') {
-  educationCertificate= prompt('My Education Certificate is Bachelor Degree?', 'yes or no');
 }
 
-if (educationCertificate.toLowerCase() == 'yes' || educationCertificate.toLowerCase() == 'y' )
-{
-  console.log ('My Education Certificate is Bachelor Degree');
-  alert('You are right, My Education Certificate is Bachelor Degree');
-  score++ ;
-} else{
-  console.log ('You are wrong, because My Education Certificate is Bachelor Degree');
-  alert('You are wrong, because My Education Certificate is Bachelor Degree');
-}
-*/
 
 function educationCertificateFun(){
   let educationCertificate = prompt('My Education Certificate is Bachelor Degree?' , 'yes or no');
+  while(!(educationCertificate.toLowerCase() == 'yes' || educationCertificate.toLowerCase() == 'y' || educationCertificate.toLowerCase() == 'no' || educationCertificate.toLowerCase() == 'n')){
+    educationCertificate = prompt('My Education Certificate is Bachelor Degree?' , 'yes or no');
+  }
+  
   if (educationCertificate.toLowerCase() == 'yes' || educationCertificate.toLowerCase() == 'y' )
   {
     console.log ('My Education Certificate is Bachelor Degree');
     alert('You are right, My Education Certificate is Bachelor Degree');
     score++ ;
-  } else{
+    
+  } else if (educationCertificate.toLowerCase() == 'no' || educationCertificate.toLowerCase() == 'n' ) {
     console.log ('You are wrong, because My Education Certificate is Bachelor Degree');
     alert('You are wrong, because My Education Certificate is Bachelor Degree');
+    
+  } else {
+    educationCertificate = prompt('My Education Certificate is Bachelor Degree?' , 'yes or no');
   }
 }
-// educationCertificateFun();
-
-
-/*
-let myHomeTown = prompt('My Home Town is Irbid?' , 'yes or no');
-
-while (myHomeTown.toLowerCase() !== 'yes' && myHomeTown.toLowerCase() !== 'y' && myHomeTown.toLowerCase() !== 'no' && myHomeTown.toLowerCase() !== 'n') {
-  myHomeTown= prompt('My Home Town is Irbid?', 'yes or no');
-}
-
-if (myHomeTown.toLowerCase() == 'yes' || myHomeTown.toLowerCase() == 'y')
-{
-  console.log ('My HomeTown is Irbid');
-  alert('You are right, My Home Town is Irbid');
-  score++ ;
-} else {
-  console.log ('You are wrong, because My Home Town is Irbid');
-  alert('You are wrong, because My Home Town is Irbid');
-}
-*/
 
 
 function myHomeTownFun(){
   let myHomeTown = prompt('My Home Town is Irbid?' , 'yes or no');
+  while(!(myHomeTown.toLowerCase() == 'yes' || myHomeTown.toLowerCase() == 'y' || myHomeTown.toLowerCase() == 'no' || myHomeTown.toLowerCase() == 'n')){
+    myHomeTown = prompt('My Home Town is Irbid?' , 'yes or no');
+  }
+  
   if (myHomeTown.toLowerCase() == 'yes' || myHomeTown.toLowerCase() == 'y')
   {
     console.log ('My HomeTown is Irbid');
     alert('You are right, My Home Town is Irbid');
     score++ ;
-  } else {
+    
+  } else if (myHomeTown.toLowerCase() == 'no' || myHomeTown.toLowerCase() == 'n'){
     console.log ('You are wrong, because My Home Town is Irbid');
     alert('You are wrong, because My Home Town is Irbid');
+    
+  } else {
+    myHomeTown = prompt('My Home Town is Irbid?' , 'yes or no');
   }
 }
-// myHomeTownFun();
-
-
-/*
-let travelOutsideJordan = prompt('do you think that I traveled outside Jordan?' , 'yes or no');
-
-while (travelOutsideJordan.toLowerCase() !== 'yes' && travelOutsideJordan.toLowerCase() !== 'y' && travelOutsideJordan.toLowerCase() !== 'no' && travelOutsideJordan.toLowerCase() !== 'n') {
-  travelOutsideJordan= prompt('do you think that I traveled outside Jordan?', 'yes or no');
-}
-
-
-if (travelOutsideJordan.toLowerCase() == 'yes' || travelOutsideJordan.toLowerCase() == 'y')
-{
-  console.log ('You are right, I worked in Saudi Arabia');
-  alert('You are right,  I worked in Saudi Arabia');
-  score++ ;
-} else{
-  console.log ('You are wrong, because I worked in Saudi Arabia');
-  alert('You are wrong, because  I worked in Saudi Arabia');
-}
-*/
 
 
 function travelOutsideJordanFun(){
   let travelOutsideJordan = prompt('do you think that I traveled outside Jordan?' , 'yes or no');
+  while(!(travelOutsideJordan.toLowerCase() == 'yes' || travelOutsideJordan.toLowerCase() == 'y' || travelOutsideJordan.toLowerCase() == 'no' || travelOutsideJordan.toLowerCase() == 'n')){
+    travelOutsideJordan = prompt('do you think that I traveled outside Jordan?' , 'yes or no');
+  }
+  
   if (travelOutsideJordan.toLowerCase() == 'yes' || travelOutsideJordan.toLowerCase() == 'y')
   {
     console.log ('You are right, I worked in Saudi Arabia');
     alert('You are right,  I worked in Saudi Arabia');
     score++ ;
-  } else{
+    
+  } else if (travelOutsideJordan.toLowerCase() == 'no' || travelOutsideJordan.toLowerCase() == 'n') {
     console.log ('You are wrong, because I worked in Saudi Arabia');
     alert('You are wrong, because  I worked in Saudi Arabia');
+    
+  } else {
+    travelOutsideJordan = prompt('do you think that I traveled outside Jordan?' , 'yes or no');
   }
 }
-// travelOutsideJordanFun();
+
 
 function fiveInOne(num){
-  let Qarr = [firstWorkFun(),firstSalaryFun(),educationCertificateFun(),myHomeTownFun(),travelOutsideJordanFun()];
+  let Qarr = [firstWorkFun(), firstSalaryFun(), educationCertificateFun(), myHomeTownFun(), travelOutsideJordanFun()];
   Qarr[num];
 }
+fiveInOne();
 
-// fiveInOne();
-
-for ( let j = 0 ; j < 5 ; j++ ){
-  fiveInOne(j);
-}
-
-alert('Welcome ' + firstName + ' to my website');
 
 
 
