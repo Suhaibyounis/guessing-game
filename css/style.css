@@ -20,7 +20,7 @@ header h1 {
 }
 
 header nav ul li{
-    background-color: rgb(226, 214, 38);
+    background-color: rgb(142, 209, 80);
     display: inline;
     line-height: 25px;
     font-size: large;
@@ -30,7 +30,9 @@ header nav ul li{
 
 main p {
     background-color: rgb(216, 224, 93);
+
 }
+
 
 header nav ul{
     text-align: center;
