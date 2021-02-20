@@ -14,11 +14,11 @@ function firstWorkFun(){
   }
   if ( firstWork.toLowerCase() == 'yes' || firstWork.toLowerCase() == 'y' )
   {
-    console.log ( 'My First Work in Jordan' );
+    
     alert( 'You are right, My First Work in Jordan' );
     score++ ;
   } else if ( firstWork.toLowerCase() == 'no' || firstWork.toLowerCase() == 'n' ) {
-    console.log ( 'You are wrong, because my First Work in Jordan' );
+    
     alert( 'You are wrong, because my First Work in Jordan' );
   } else {
     firstWork = prompt( 'do you think my first work in Jordan?' , 'yes or no' );
@@ -32,12 +32,10 @@ function firstSalaryFun(){
   }
   if (firstSalary.toLowerCase() == 'yes' || firstSalary.toLowerCase() == 'y' )
   {
-    console.log ('My First Salary in Jordan is 500JD');
     alert('You are right, My First Salary in Jordan is 500JD');
     score++;
     
   } else if (firstSalary.toLowerCase() == 'no' || firstSalary.toLowerCase() == 'n' ){
-    console.log ('You are wrong, because my First Salary in Jordan is 500JD');
     alert('You are wrong, because my First Salary in Jordan is 500JD');
     
   } else {
@@ -55,12 +53,10 @@ function educationCertificateFun(){
   
   if (educationCertificate.toLowerCase() == 'yes' || educationCertificate.toLowerCase() == 'y' )
   {
-    console.log ('My Education Certificate is Bachelor Degree');
     alert('You are right, My Education Certificate is Bachelor Degree');
     score++ ;
     
   } else if (educationCertificate.toLowerCase() == 'no' || educationCertificate.toLowerCase() == 'n' ) {
-    console.log ('You are wrong, because My Education Certificate is Bachelor Degree');
     alert('You are wrong, because My Education Certificate is Bachelor Degree');
     
   } else {
@@ -77,12 +73,10 @@ function myHomeTownFun(){
   
   if (myHomeTown.toLowerCase() == 'yes' || myHomeTown.toLowerCase() == 'y')
   {
-    console.log ('My HomeTown is Irbid');
     alert('You are right, My Home Town is Irbid');
     score++ ;
     
   } else if (myHomeTown.toLowerCase() == 'no' || myHomeTown.toLowerCase() == 'n'){
-    console.log ('You are wrong, because My Home Town is Irbid');
     alert('You are wrong, because My Home Town is Irbid');
     
   } else {
@@ -99,12 +93,10 @@ function travelOutsideJordanFun(){
   
   if (travelOutsideJordan.toLowerCase() == 'yes' || travelOutsideJordan.toLowerCase() == 'y')
   {
-    console.log ('You are right, I worked in Saudi Arabia');
     alert('You are right,  I worked in Saudi Arabia');
     score++ ;
     
   } else if (travelOutsideJordan.toLowerCase() == 'no' || travelOutsideJordan.toLowerCase() == 'n') {
-    console.log ('You are wrong, because I worked in Saudi Arabia');
     alert('You are wrong, because  I worked in Saudi Arabia');
     
   } else {
